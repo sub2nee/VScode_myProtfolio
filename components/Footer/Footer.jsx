@@ -1,5 +1,49 @@
 import React from 'react';
 
+/**Icons import */
+import ErrorIcon from '../icons/ErrorIcon';
+import WarningIcon from '../icons/WarningIcon';
+import BellIcon from '../icons/BellIcon';
+import CheckIcon from '../icons/CheckIcon';
+import NextjsIcon from '../icons/NextjsIcon';
+import SourceControlIcon from '../icons/SourceControlIcon';
+
+/**CSS import */
+import styles from './Footer.module.scss';
+
 export default function Footer() {
-    return <div>Footer</div>;
+    return (
+        <footer className={styles.bottomBar}>
+            <div className={styles.container}>
+                <a
+                    href="#"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    className={styles.section}
+                >
+                    <SourceControlIcon className={styles.icon} />
+                    <p>main</p>
+                </a>
+                <div className={styles.section}>
+                    <ErrorIcon className={styles.icon} />
+                    <p className={styles.errorText}>0</p>&nbsp;&nbsp;
+                    <WarningIcon className={styles.icon} />
+                    <p>0</p>
+                </div>
+            </div>
+            <div className={styles.container}>
+                <div className={styles.section}>
+                    <NextjsIcon className={styles.icon} />
+                    <p>Powered by Next.js</p>
+                </div>
+                <div className={styles.section}>
+                    <CheckIcon className={styles.icon} />
+                    <p>Prettier</p>
+                </div>
+                <div className={styles.section}>
+                    <BellIcon />
+                </div>
+            </div>
+        </footer>
+    );
 }
