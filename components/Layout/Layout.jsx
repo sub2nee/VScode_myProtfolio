@@ -6,16 +6,18 @@ import Footer from '../Footer/Footer';
 
 /**CSS import */
 import styles from './Layout.module.scss';
+import Sidebar from '../Sidebar/Sidebar';
 
 const Layout = ({ children }) => {
     return (
         <>
             {/* Header */}
             <Header />
-
-            {/* Explorer */}
-
             {/* Sidebar */}
+            <div className={styles.main}>
+                <Sidebar />
+            </div>
+            {/* Explorer */}
 
             {/* Tabs */}
 
