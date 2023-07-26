@@ -11,7 +11,7 @@ import SourceControlIcon from '../icons/SourceControlIcon';
 /**CSS import */
 import styles from './Footer.module.scss';
 
-export default function Footer() {
+const Footer = () => {
     return (
         <footer className={styles.bottomBar}>
             <div className={styles.container}>
@@ -46,4 +46,6 @@ export default function Footer() {
             </div>
         </footer>
     );
-}
+};
+
+export default Footer;

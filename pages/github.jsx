@@ -1,5 +1,7 @@
 import React from 'react';
 
-export default function github() {
+const github = () => {
     return <div>github</div>;
-}
+};
+
+export default github;

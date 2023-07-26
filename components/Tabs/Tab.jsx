@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { useRouter } from 'next/router';
 import styles from './Tab.module.scss';
 
-export default function Tab({ icon, filename, path }) {
+const Tab = ({ icon, filename, path }) => {
     const router = useRouter();
 
     return (
@@ -19,4 +19,6 @@ export default function Tab({ icon, filename, path }) {
             </div>
         </Link>
     );
-}
+};
+
+export default Tab;

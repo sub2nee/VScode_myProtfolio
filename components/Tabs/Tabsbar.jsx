@@ -2,7 +2,7 @@ import React from 'react';
 import Tab from './Tab';
 import styles from './Tab.module.scss';
 
-export default function Tabbar() {
+const Tabsbar = () => {
     return (
         <div className={styles.Tabs}>
             <Tab icon="/images/react_icon.svg" filename="home.jsx" path="/" />
@@ -33,4 +33,6 @@ export default function Tabbar() {
             />
         </div>
     );
-}
+};
+
+export default Tabsbar;

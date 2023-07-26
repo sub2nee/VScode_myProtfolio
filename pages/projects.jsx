@@ -1,10 +1,12 @@
 import React from 'react';
 
-export default function projects() {
+const projects = () => {
     return <div>projects</div>;
-}
+};
 export async function getStaticProps() {
     return {
         props: { title: 'Projects' },
     };
 }
+
+export default projects;

@@ -49,7 +49,7 @@ const sidebarBottomItems = [
     },
 ];
 
-export default function Sidebar() {
+const Sidebar = () => {
     const router = useRouter();
 
     return (
@@ -92,4 +92,6 @@ export default function Sidebar() {
             </div>
         </aside>
     );
-}
+};
+
+export default Sidebar;

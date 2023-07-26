@@ -1,10 +1,12 @@
 import React from 'react';
 
-export default function about() {
+const about = () => {
     return <div>about</div>;
-}
+};
 export async function getStaticProps() {
     return {
         props: { title: 'About' },
     };
 }
+
+export default about;

@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import styles from './Header.module.scss';
 
-export default function Header() {
+const Header = () => {
     return (
         <section className={styles.header}>
             <Image
@@ -32,4 +32,5 @@ export default function Header() {
             </div>
         </section>
     );
-}
+};
+export default Header;
