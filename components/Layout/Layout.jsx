@@ -5,6 +5,7 @@ import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import Sidebar from '../Sidebar/Sidebar';
 import Tabsbar from '../Tabs/Tabsbar';
+import Explorer from '../Explorer/Explorer';
 
 /**CSS import */
 import styles from './Layout.module.scss';
@@ -12,19 +13,15 @@ import styles from './Layout.module.scss';
 const Layout = ({ children }) => {
     return (
         <>
-            {/* Header */}
             <Header />
-            {/* Sidebar */}
-            <div className={styles.main}>
+            <div className={styles.layout}>
                 <Sidebar />
-                {/* Explorer */}
-                <div style={{ width: '100%' }}>
-                    {/* Tabs */}
+                <Explorer />
+                <div className={styles.main}>
                     <Tabsbar />
                     <main className={styles.content}>{children}</main>
                 </div>
             </div>
-            {/* Footer */}
             <Footer />
         </>
     );

@@ -1,10 +1,10 @@
 import React from 'react';
 import Tab from './Tab';
-import styles from './Tab.module.scss';
+import styles from './Tabsbar.module.scss';
 
 const Tabsbar = () => {
     return (
-        <div className={styles.Tabs}>
+        <div className={styles.tabs}>
             <Tab icon="/images/react_icon.svg" filename="home.jsx" path="/" />
             <Tab
                 icon="/images/html_icon.svg"

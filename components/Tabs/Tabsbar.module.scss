@@ -1,0 +1,30 @@
+.tabs {
+  width: 100%;
+  display: flex;
+  background: var(--tabs-bg);
+  overflow-x: auto;
+  
+
+&::-webkit-scrollbar {
+  width: 8px;
+}
+
+&::-webkit-scrollbar-track {
+  background: var(--scrollbar-track-bg);
+  border-left: 1px solid #1e1f29;
+}
+
+&::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb-bg);
+  border-left: 1px solid #1e1f29;
+}
+
+@media screen and (max-width: 900px) {
+    width: 78vw;
+}
+
+@media screen and (max-width: 600px) {
+    width: 89.5vw;
+  }
+  
+}

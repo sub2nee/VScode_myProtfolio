@@ -22,6 +22,9 @@
     --scrollbar-track-bg: #24292e;
     --scrollbar-thumb-bg: #333536;
     --article-bg: #1f2428;
+    --tagname-text-color: #9de6a4;
+    --attributename-text-color: #ae93ea;
+    --attributevalue-text-color: #a3c6f4;
 }
 
 /* Dracula */

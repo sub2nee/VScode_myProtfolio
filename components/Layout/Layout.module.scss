@@ -1,37 +1,43 @@
-.main {
+.layout {
   display: flex;
-  background: var(--main-bg);
-}
-.content {
-  padding: 2rem;
-  color: var(--text-color);
-  font-family: 'JetBrains Mono', monospace;
-  flex: 1;
-  height: 85vh;
-  overflow-y: auto;
-}
+  width: 100%;
+  height: calc(100vh - 30px - 25px);
+  background-color: var(--main-bg);
 
-.content {
-  scrollbar-width: 10px;
-  scrollbar-color: var(--accent-color);
-}
+  .main {
+    width: calc(100% - 56px - 172px);
 
-.content::-webkit-scrollbar {
-  width: 15px;
-}
+    .content {
+      overflow-y: auto;
+      height: calc(100% - 52px);
+      font-family: 'intelone-mono-font-family-regular';
+      color: var(--text-color);
+      padding: 2rem;
 
-.content::-webkit-scrollbar-track {
-  background: var(--scrollbar-track-bg);
-  border-left: 1px solid #1e1f29;
-}
+      &::-webkit-scrollbar {
+        width: 12px;
+      }
 
-.content::-webkit-scrollbar-thumb {
-  background: var(--scrollbar-thumb-bg);
-  border-left: 1px solid #1e1f29;
-}
+      &::-webkit-scrollbar-track {
+        background: var(--scrollbar-track-bg);
+        border-left: 1px solid #1e1f29;
+      }
 
-@media screen and (max-width: 600px) {
-  .content {
-    padding: 2rem 1rem;
+      &::-webkit-scrollbar-thumb {
+        background: var(--scrollbar-thumb-bg);
+        border-left: 1px solid #1e1f29;
+      }
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .main {
+      width: calc(100% - 56px);
+      
+      .content {
+        padding: 1rem;
+        overflow-y: auto;
+      }
+    }
   }
 }
