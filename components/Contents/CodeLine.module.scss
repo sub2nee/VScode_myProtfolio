@@ -1,0 +1,17 @@
+.codeline {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+  
+    &::before {
+      content: counter(line);
+      counter-increment: line;
+      margin-right: 1rem;
+      color: grey;
+      min-width: 26px;
+  
+      @media screen and (max-width: 600px) {
+        min-width: 16px;
+      }
+    }
+  }

@@ -1,0 +1,23 @@
+.codeblock {
+    counter-reset: line;
+    font-size: 1.2rem;
+    line-height: 2rem;
+  
+    a {
+      color: var(--accent-color);
+      text-decoration: none;
+  
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  
+    .className {
+      color: var(--accent-color);
+    }
+  
+    @media screen and (max-width: 600px) {
+      font-size: 0.85rem;
+      line-height: 1.5rem;
+    }
+  }
