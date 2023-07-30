@@ -1,0 +1,60 @@
+[
+    {
+        "copy": "collective",
+        "name": "JAVATALK",
+        "image": "https://imgur.com/pLGK51v.png",
+        "description": "그린컴퓨터 아카데미 JAVA 풀스택 개발자 과정 이수 중 첫 번째로 진행한 팀 프로젝트",
+        "tags": ["JAVA","OracleDB"],
+        "source_code": "https://github.com/sub2nee/javatalk/tree/master/src/javatalk"
+    },
+    {
+        "copy": "collective",
+        "name": "SHOP",
+        "image": "https://imgur.com/G0mYNgy.jpg",
+        "description": "그린컴퓨터 아카데미 JAVA 풀스택 개발자 과정 이수 중 진행한 SpringBoot를 활용한 온라인 쇼핑몰 프로젝트.",
+        "tags": ["JAVA","MariaDB","SpringBoot","SpringSecurity","Gradle","JPA","OAuth2","ThymeLeaf","Bootstrap","JavaScript"],
+        "source_code": "https://github.com/sub2nee/shop/tree/main/src"  
+    },
+    {
+        "copy": "collective",
+        "name": "Facebook",
+        "image": "https://imgur.com/aohHcJL.jpg",
+        "description": "그린컴퓨터 아카데미 JAVA 풀스택 개발자 과정 이수 중 진행한 SpringBoot 및 React를 활용한 facebook 사이트 프로젝트.",
+        "tags": ["JAVA","MariaDB","SpringBoot","Gradle","JPA","JJWT","React","material-ui"],
+        "source_code": "https://github.com/sub2nee/facebook_clon_react/tree/main/back-end/src"  
+    },
+    {
+        "copy": "personal",
+        "name": "Shooting_Game(ver.1)",
+        "image": "https://imgur.com/KmVQ0cc.png",
+        "description": "자바스크립트로 만든 슈팅게임 _ shooting Game",
+        "tags": ["JavaScript"],
+        "source_code": "https://github.com/sub2nee/Shooting_Game-JS/blob/main/main.js"  
+    },
+    {
+        "copy": "personal",
+        "name": "Shooting_Game(ver.2)",
+        "image": "https://imgur.com/1umRSAj.png",
+        "description": " HTML,CSS,JS,jQuery를 이용하여 만든 두번째 미니프로젝트입니다.",
+        "tags": ["JavaScript","HTML","CSS","JQuery"],
+        "source_code": "https://github.com/sub2nee/shooting_game-js.html.css/blob/main/index.js",
+        "demo":"https://make-shooting-game.netlify.app/"
+    },
+    {
+        "copy": "personal",
+        "name": "feeling_diary",
+        "image": "https://imgur.com/6OM04iI.png",
+        "description": " Udemy - 한입크기로 잘라 먹는 리액트 강의를 보면서 만든 감정일기장",
+        "tags": ["React","fireBase","AdobePhotoshop"],
+        "source_code": "https://github.com/sub2nee/feeling_diary/tree/master/src",
+        "demo":"https://feeling-diary.web.app/"
+    },
+    {
+        "copy": "personal",
+        "name": "weather",
+        "image": "https://imgur.com/dkpSrYh.jpg",
+        "description": "react-native & Expo 로 만든 날씨어플",
+        "tags": ["ReactNative","Expo","AdobePhotoshop"],
+        "source_code": "https://github.com/sub2nee/weather_react-native-expo-/blob/main/App.js"
+    }
+]
