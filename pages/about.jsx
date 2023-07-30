@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import { Cursor, useTypewriter } from 'react-simple-typewriter';
 import Link from 'next/link';
+import { motion } from 'framer-motion';
 
 /**component import */
 import CodeBlock from '@/components/Contents/CodeBlock';
@@ -21,7 +22,11 @@ const about = () => {
     });
 
     return (
-        <>
+        <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1.5 }}
+        >
             <div className={style.circle}>
                 <Image src="/images/profile.jpg" alt="profile" fill />
                 <div className={style.circle_text_box}>
@@ -160,7 +165,7 @@ const about = () => {
                         <Link href="/skills">
                             <button className={style.btn}>
                                 <span>보러가기</span>
-                                </button>
+                            </button>
                         </Link>
                     </TagContents>
                 </CodeLine>
@@ -235,7 +240,7 @@ const about = () => {
                     <TagClose tagname={'html'} />
                 </CodeLine>
             </CodeBlock>
-        </>
+        </motion.div>
     );
 };
 export async function getStaticProps() {
