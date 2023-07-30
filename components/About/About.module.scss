@@ -1,0 +1,80 @@
+
+.circle {
+    width: 28vw;
+    height: 28vw;
+    background-color: none;
+    border-radius: 50%;
+    transform: scale(0);
+    animation: scale 1s both linear;
+    margin: 4em auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+ 
+  .circle_text_box {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-origin: center center;
+    opacity: 0;
+    animation: 
+      rotate 40s infinite linear,
+      opacity 1s both linear;
+    animation-delay: 1s;
+  }
+  .circle_svg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    fill: var(--accent-color);
+  }
+  Image {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    animation: opacity 1s both linear;
+    animation-delay: 1s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  @keyframes scale {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+  }
+  @keyframes opacity {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  @keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+}
+
+$bg: #fff;
+$text: #382b22;
+$light-pink: #fff0f0;
+$pink: #ffe9e9;
+$dark-pink: #f9c4d2;
+$pink-border: #b18597;
+$pink-shadow: #ffe3e2;
+
+.btn{
+  font-family: 'TheJamsil5Bold';
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 24px;
+  outline: none;
+  background-color: var(--accent-color);
+  color: var(--button-text);
+
+}

@@ -6,7 +6,7 @@ const skills = () => {
 
 export async function getStaticProps() {
     return {
-        props: { title: 'Projects' },
+        props: { title: 'Skills' },
     };
 }
 export default skills;

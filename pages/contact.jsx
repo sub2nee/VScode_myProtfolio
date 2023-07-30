@@ -6,7 +6,7 @@ import CodeLine from '@/components/Contents/CodeLine';
 import EmailForm from '@/components/Contact/EmailForm';
 
 /** CSS import*/
-import style from '@/components/Contact/Contact.module.scss';
+import styled from 'styled-components';
 
 const socialItems = [
     {
@@ -37,20 +37,38 @@ const socialItems = [
     },
 ];
 
+const ContactTitle = styled.h2`
+    margin-bottom: 0.8em;
+`;
+
+const ContactItem = styled.div`
+    margin-bottom: 1em;
+
+    .socials {
+        color: var(--accent-color);
+        margin-right: 0.5em;
+    }
+
+    .social_item {
+        display: inline-block;
+        margin: 0 0.3em 0 2em;
+    }
+`;
+
 const contact = () => {
     return (
         <>
-            <h2 className={style.contact_tit}>Contact with me! 🤙</h2>
+            <ContactTitle>Contact with me! 🤙</ContactTitle>
 
-            <div className={`${style.contact_item}`}>
+            <ContactItem>
                 <CodeBlock>
                     <CodeLine>
-                        <span className={style.socials}>.socials</span> {'{'}
+                        <span className="socials">.socials</span> {'{'}
                     </CodeLine>
                     {socialItems.map((item, idx) => {
                         return (
                             <CodeLine key={idx}>
-                                <span className={style.social_item}>
+                                <span className="social_item">
                                     {item.social}:
                                 </span>
                                 <a
@@ -66,10 +84,10 @@ const contact = () => {
                     })}
                     <CodeLine>{'}'}</CodeLine>
                 </CodeBlock>
-            </div>
-            <div className={`${style.contact_item}`}>
+            </ContactItem>
+            <ContactItem>
                 <EmailForm />
-            </div>
+            </ContactItem>
         </>
     );
 };
