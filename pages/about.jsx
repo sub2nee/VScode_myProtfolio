@@ -158,7 +158,7 @@ const about = () => {
 
                 <CodeLine>
                     <TagContents indent={4}>
-                        <Link href="/skills">
+                        <Link href="https://wistful-crocodile-0b1.notion.site/a35f0b4dedfa4044a3c40d26549476a4#72613c2e8ca04add9fcf9d4dfc6275f5">
                             <motion.button
                                 whileHover={{ scale: 0.9 }}
                                 whileTap={{ scale: 0.7 }}
