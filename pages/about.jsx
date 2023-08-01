@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { Cursor, useTypewriter } from 'react-simple-typewriter';
+import { Typewriter } from 'react-simple-typewriter';
 
 /**component import */
 import CodeBlock from '@/components/Contents/CodeBlock';
@@ -14,12 +14,6 @@ import CircleSvg from '@/components/About/CircleSvg';
 import style from '@/components/About/About.module.scss';
 
 const about = () => {
-    const Text = useTypewriter({
-        words: ["중요한건 꺾이지 않는 코딩 'O'"],
-        loop: 1,
-        delaySpeed: 3000,
-    });
-
     return (
         <motion.div
             initial={{ opacity: 0 }}
@@ -53,12 +47,15 @@ const about = () => {
                 <CodeLine>
                     <TagOpen tagname={'title'} indent={3} />
                 </CodeLine>
-
                 <CodeLine>
                     <TagContents indent={4}>
-                        {' '}
-                        {Text}
-                        <Cursor /> 👩‍💻{' '}
+                        <Typewriter
+                            words={["중요한건 꺾이지 않는 코딩 'O'"]}
+                            typeSpeed={100}
+                            delaySpeed={3000}
+                            cursor
+                        />
+                        👩‍💻{' '}
                         <strong>
                             {'('}
                             <a
