@@ -84,11 +84,13 @@ a {
 }
 
 .Expo,
+.Next,
 .JAVA {
     border: 2px solid rgb(116, 118, 120);
 }
 .Expo:hover,
-.JAVA:hover {
+.JAVA:hover,
+.Next:hover {
     background: rgba(132, 134, 136, 0.25);
 }
 

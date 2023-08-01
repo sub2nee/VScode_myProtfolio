@@ -63,5 +63,16 @@
         "description": "react-native & Expo 로 만든 날씨어플",
         "tags": ["ReactNative","Expo","AdobePhotoshop"],
         "source_code": "https://github.com/sub2nee/weather_react-native-expo-/blob/main/App.js"
+    },
+    {
+        "id":8,
+        "copy": "personal",
+        "name": "VSCODE-portfolio",
+        "image": "https://imgur.com/wa9VuSk.png",
+        "description": "VSCODE 스타일의 포트폴리오",
+        "tags": ["Next","AdobePhotoshop"],
+        "source_code": "https://github.com/sub2nee/VScode_myProtfolio/tree/main/pages",
+        "demo":"https://vscode-binzz.vercel.app"
+        
     }
 ]
