@@ -5,7 +5,6 @@ import Link from 'next/link';
 /**icons import */
 import FilesIcon from '../icons/FilesIcon';
 import CodeIcon from '../icons/CodeIcon';
-import PencilIcon from '../icons/PencilIcon';
 import MailIcon from '../icons/MailIcon';
 import ExtentionIcon from '../icons/ExtentionIcon';
 import AccountIcon from '../icons/AccountIcon';

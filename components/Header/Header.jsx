@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import styles from './Header.module.scss';
 
+const text = "binzz's Portfolio - Visual Studio Code";
 const Header = () => {
     return (
         <section className={styles.header}>
@@ -22,9 +23,7 @@ const Header = () => {
                 <p>Terminal</p>
                 <p>Help</p>
             </div>
-            <p className={styles.title}>
-                binzz's Portfolio - Visual Studio Code
-            </p>
+            <p className={styles.title}>{text}</p>
             <div className={styles.windowButtons}>
                 <span className={styles.minimize}></span>
                 <span className={styles.maximize}></span>

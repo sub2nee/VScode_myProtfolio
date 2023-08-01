@@ -21,6 +21,7 @@ const GridContainer = styled.div`
 const ProjectsTitle = styled.h2`
     margin-bottom: 0.8em;
 `;
+const text = "It's my works!";
 
 const projects = ({ projects }) => {
     return (
@@ -29,7 +30,7 @@ const projects = ({ projects }) => {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1.5 }}
         >
-            <ProjectsTitle>It's my works! 💻</ProjectsTitle>
+            <ProjectsTitle>{text} 💻</ProjectsTitle>
             <GridContainer>
                 {projects.map(project => (
                     <ProjectCard key={project.id} project={project} />

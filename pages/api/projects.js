@@ -4,7 +4,7 @@ export const getProjects = () => {
     return data;
 };
 
-export default (req, res) => {
+export default function (req, res) {
     const projects = getProjects();
     res.json(projects);
-};
+}
