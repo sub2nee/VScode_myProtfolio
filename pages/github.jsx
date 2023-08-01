@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 
 /** component import */
 import RepoCard from '@/components/Github/RepoCard';
@@ -9,29 +10,36 @@ import styles from '@/components/Github/GithubPage.module.scss';
 const github = ({ repos, user }) => {
     return (
         <>
-            <div className={styles.user}>
-                <div>
-                    <Image
-                        src={user.avatar_url}
-                        className={styles.avatar}
-                        alt={user.login}
-                        width={50}
-                        height={50}
-                    />
-                    <h3 className={styles.username}>{user.login}</h3>
+            <motion.div
+                initial={{ y: 10, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                exit={{ y: -10, opacity: 0 }}
+                transition={{ duration: 0.2 }}
+            >
+                <div className={styles.user}>
+                    <div>
+                        <Image
+                            src={user.avatar_url}
+                            className={styles.avatar}
+                            alt={user.login}
+                            width={50}
+                            height={50}
+                        />
+                        <h3 className={styles.username}>{user.login}</h3>
+                    </div>
+                    <div>
+                        <h3>{user.public_repos} repos</h3>
+                    </div>
+                    <div>
+                        <h3>{user.followers} followers</h3>
+                    </div>
                 </div>
-                <div>
-                    <h3>{user.public_repos} repos</h3>
+                <div className={styles.container}>
+                    {repos.map(repo => (
+                        <RepoCard key={repo.id} repo={repo} />
+                    ))}
                 </div>
-                <div>
-                    <h3>{user.followers} followers</h3>
-                </div>
-            </div>
-            <div className={styles.container}>
-                {repos.map(repo => (
-                    <RepoCard key={repo.id} repo={repo} />
-                ))}
-            </div>
+            </motion.div>
         </>
     );
 };

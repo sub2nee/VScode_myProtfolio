@@ -21,11 +21,7 @@ const Tabsbar = () => {
                 filename="projects.js"
                 path="/projects"
             />
-            <Tab
-                icon="/images/json_icon.svg"
-                filename="skills.json"
-                path="/skills"
-            />
+
             <Tab
                 icon="/images/markdown_icon.svg"
                 filename="github.md"

@@ -24,10 +24,7 @@ const sidebarTopItems = [
         Icon: CodeIcon,
         path: '/projects',
     },
-    {
-        Icon: PencilIcon,
-        path: '/skills',
-    },
+
     {
         Icon: MailIcon,
         path: '/contact',

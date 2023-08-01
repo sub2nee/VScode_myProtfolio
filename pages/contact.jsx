@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 /**component import */
 import CodeBlock from '@/components/Contents/CodeBlock';
@@ -58,36 +59,47 @@ const ContactItem = styled.div`
 const contact = () => {
     return (
         <>
-            <ContactTitle>Contact with me! 🤙</ContactTitle>
+            <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                animate={{ x: 30 }}
+            >
+                <ContactTitle>Contact with me! 🤙</ContactTitle>
+                <ContactItem>
+                    <CodeBlock>
+                        <CodeLine>
+                            <span className="socials">.socials</span> {'{'}
+                        </CodeLine>
+                        {socialItems.map((item, idx) => {
+                            return (
+                                <CodeLine key={idx}>
+                                    <span className="social_item">
+                                        {item.social}:
+                                    </span>
+                                    <a
+                                        href={item.href}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        {item.link}
+                                    </a>
+                                    <span>;</span>
+                                </CodeLine>
+                            );
+                        })}
+                        <CodeLine>{'}'}</CodeLine>
+                    </CodeBlock>
+                </ContactItem>
 
-            <ContactItem>
-                <CodeBlock>
-                    <CodeLine>
-                        <span className="socials">.socials</span> {'{'}
-                    </CodeLine>
-                    {socialItems.map((item, idx) => {
-                        return (
-                            <CodeLine key={idx}>
-                                <span className="social_item">
-                                    {item.social}:
-                                </span>
-                                <a
-                                    href={item.href}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    {item.link}
-                                </a>
-                                <span>;</span>
-                            </CodeLine>
-                        );
-                    })}
-                    <CodeLine>{'}'}</CodeLine>
-                </CodeBlock>
-            </ContactItem>
-            <ContactItem>
-                <EmailForm />
-            </ContactItem>
+                <motion.div
+                    animate={{ x: 0, y: -20 }}
+                    transition={{ delay: 0 }}
+                >
+                    <ContactItem>
+                        <EmailForm />
+                    </ContactItem>
+                </motion.div>
+            </motion.div>
         </>
     );
 };

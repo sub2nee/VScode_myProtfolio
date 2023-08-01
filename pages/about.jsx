@@ -163,9 +163,18 @@ const about = () => {
                 <CodeLine>
                     <TagContents indent={4}>
                         <Link href="/skills">
-                            <button className={style.btn}>
+                            <motion.button
+                                whileHover={{ scale: 0.9 }}
+                                whileTap={{ scale: 0.7 }}
+                                transition={{
+                                    type: 'spring',
+                                    stiffness: 400,
+                                    damping: 17,
+                                }}
+                                className={style.btn}
+                            >
                                 <span>보러가기</span>
-                            </button>
+                            </motion.button>
                         </Link>
                     </TagContents>
                 </CodeLine>

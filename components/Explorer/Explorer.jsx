@@ -25,11 +25,7 @@ const explorerItems = [
         path: '/projects',
         icon: 'images/js_icon.svg',
     },
-    {
-        name: 'skills.json',
-        path: '/skills',
-        icon: 'images/json_icon.svg',
-    },
+
     {
         name: 'github.md',
         path: '/github',
